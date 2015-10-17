@@ -1,0 +1,3 @@
+moduleName=functional-aliases-extension
+moduleVersion=${version}
+extensionClasses=nz.net.ultraq.groovy.FunctionalAliasesExtension

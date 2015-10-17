@@ -1,1 +1,0 @@
-Groovy Extension Module example which adds map, filter and reduce to collections
