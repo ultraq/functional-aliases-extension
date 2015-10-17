@@ -2,6 +2,8 @@
 Functional Aliases Extension
 ============================
 
+[![Build Status](https://travis-ci.org/ultraq/functional-aliases-extension.svg?branch=master)](https://travis-ci.org/ultraq/functional-aliases-extension)
+
 Adds functional method aliases (filter/map/reduce) for existing Groovy methods.
 
 This code is totally the work of Juan Vazquez, which he has blogged about in his
