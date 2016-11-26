@@ -1,11 +1,10 @@
 
 apply plugin: 'groovy'
 apply plugin: 'maven'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.1.0/gradle-support.gradle'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.2.0/maven-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.4.0/gradle-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.4.0/maven-support.gradle'
 
 project.description = 'Adds functional method aliases (filter/map/reduce) for existing Groovy methods'
-project.archivesBaseName = project.name
 project.sourceCompatibility = '1.8'
 
 project.group    = 'nz.net.ultraq.groovy'
@@ -13,9 +12,18 @@ project.artifact = 'functional-aliases-extension'
 project.version  = '1.0.0-SNAPSHOT'
 project.year     = '2015'
 project.licenses = []
+project.developers = [
+	[
+		name: 'Juan Vazquez',
+		url: 'http://javazquez.com/juan/',
+		roles: ['author', 'developer']
+	]
+]
 
 dependencies {
-	compile('org.codehaus.groovy:groovy:2.4.3', optional)
+	compile(
+		'org.codehaus.groovy:groovy:2.4.7'
+	)
 	testCompile(
 		'org.spockframework:spock-core:1.0-groovy-2.4'
 	)
@@ -23,6 +31,7 @@ dependencies {
 
 processResources {
 	expand([
-		version: project.version
+		moduleName:    project.artifact,
+		moduleVersion: project.version
 	])
 }
