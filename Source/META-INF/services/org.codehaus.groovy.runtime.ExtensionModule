@@ -1,3 +1,3 @@
-moduleName=functional-aliases-extension
-moduleVersion=${version}
-extensionClasses=nz.net.ultraq.groovy.FunctionalAliasesExtension
+moduleName       = ${moduleName}
+moduleVersion    = ${moduleVersion}
+extensionClasses = nz.net.ultraq.groovy.FunctionalAliasesExtension

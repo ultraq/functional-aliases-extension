@@ -1,14 +1,16 @@
 
 package nz.net.ultraq.groovy.tests
 
+import nz.net.ultraq.groovy.FunctionalAliasesExtension
+
 import spock.lang.Specification
 
 /**
- * Spock unit tests for the <tt>FunctionalAliasesExtension</tt> class.
+ * Spock unit tests for the {@link FunctionalAliasesExtension} class.
  * 
  * @author Juan Vazquez
  */
-class FunctionalAliasesExtension extends Specification {
+class FunctionalAliasesExtensionTests extends Specification {
 
 	def 'test filter'() {
 		expect:

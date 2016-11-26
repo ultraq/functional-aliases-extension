@@ -6,17 +6,17 @@ package nz.net.ultraq.groovy
  * 
  * @author Juan Vazquez
  */
-public class FunctionalAliasesExtension {
+class FunctionalAliasesExtension {
 
-	public static Collection filter(Collection self, Closure clozure) {
-		return self.grep(clozure)
+	static Collection filter(Collection self, Closure closure) {
+		return self.grep(closure)
 	}
 
-	public static Collection map(Collection self, Closure clozure) {
-		return self.collect(clozure)
+	static Collection map(Collection self, Closure closure) {
+		return self.collect(closure)
 	}
 
-	public static Object reduce(Collection self, Closure clozure) {
-		return self.inject(clozure)
+	static Object reduce(Collection self, Closure closure) {
+		return self.inject(closure)
 	}
 }
